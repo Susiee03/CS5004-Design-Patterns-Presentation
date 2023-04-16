@@ -116,6 +116,11 @@ The project is a simple vehicle management system that demonstrates the use of t
 6. VehicleFactoryClient class: A class that provides a simple interface for creating and configuring vehicles based on their types.
 7. Main class: A class that demonstrates the use of the VehicleFactoryClient to create and configure vehicles.
 
+### The UML Diagram of the project:
+
+<img width="767" alt="UML - Car Factory jpg " src="https://user-images.githubusercontent.com/121272886/232270258-73afa1c9-7d00-4c89-89e7-b7da9b4332d5.png">
+
+
 ### Significance of Factory Method pattern:
 
 The Factory Method pattern is essential in this project as it provides a way to decouple the process of creating objects from the specific classes that implement those objects. By doing so, it becomes easier to add new vehicle types or modify existing ones without affecting the rest of the codebase. The pattern also promotes code reusability and maintainability by centralizing object creation and configuration.

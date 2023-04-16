@@ -86,9 +86,6 @@ public enum VehicleType {
         return factory.createVehicle();
     }
 
-    public Vehicle createConfiguredVehicle(String configuration) {
-        return factory.createConfiguredVehicle(configuration);
-    }
 }
 ```
 
@@ -100,9 +97,6 @@ public class VehicleFactoryClient {
         return vehicleType.createVehicle();
     }
 
-    public Vehicle getConfiguredVehicle(VehicleType vehicleType, String configuration) {
-        return vehicleType.createConfiguredVehicle(configuration);
-    }
 }
 ```
 
@@ -115,13 +109,12 @@ The project is a simple vehicle management system that demonstrates the use of t
 ### The project contains the following components:
 
 1. Vehicle interface: Defines the common methods for all vehicle types, such as starting the engine and configuring the vehicle.
-2. FuelType enum: Represents the fuel types for the vehicles, like GASOLINE, DIESEL, and ELECTRIC.
-3. Vehicle classes: Car, ElectricCar, and Truck classes that implement the Vehicle interface, providing specific implementations for each vehicle type.
-4. VehicleFactory interface: Defines the factory methods for creating vehicles and configured vehicles.
-5. Vehicle factory classes: CarFactory, ElectricCarFactory, and TruckFactory classes that implement the VehicleFactory interface, providing a specific factory for each vehicle type.
-6. VehicleType enum: Represents the different vehicle types and associates them with their respective factories.
-7. VehicleFactoryClient class: A class that provides a simple interface for creating and configuring vehicles based on their types.
-8. Main class: A class that demonstrates the use of the VehicleFactoryClient to create and configure vehicles.
+2. Vehicle classes: Car, ElectricCar, and Truck classes that implement the Vehicle interface, providing specific implementations for each vehicle type.
+3. VehicleFactory interface: Defines the factory methods for creating vehicles and configured vehicles.
+4. Vehicle factory classes: CarFactory, ElectricCarFactory, and TruckFactory classes that implement the VehicleFactory interface, providing a specific factory for each vehicle type.
+5. VehicleType enum: Represents the different vehicle types and associates them with their respective factories.
+6. VehicleFactoryClient class: A class that provides a simple interface for creating and configuring vehicles based on their types.
+7. Main class: A class that demonstrates the use of the VehicleFactoryClient to create and configure vehicles.
 
 ### Significance of Factory Method pattern:
 
